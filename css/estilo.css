@@ -3,28 +3,38 @@
     --secondary-color: #31333b;
 }
 
+html{
+    font-size: 62.5%; /*Faz 1rem valer 10 pixels*/
+}
+
 body{
     display: flex;
+    margin: 0;
     color: #e7e7e7;
     background-color: #ccc;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh; /*Vai ocupar no minimo toda a display port e se estender caso necessário*/
 }
 
 .profile-pic{
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
+    max-width: 10rem;
 }
 
 .main-header{
-    width: 260px;
+    flex: 0 0 26rem;
     background-color: var(--secondary-color);
 }
 
 .main{
     background-color: #444856;
+    flex: 1 0;
 }
 
 a {
     color: inherit;
+}
+
+.main, .main-header{
+    font-size: 1.6rem; /*Faz a fonte valer 16 pixels novamente*/
 }
