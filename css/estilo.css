@@ -50,7 +50,7 @@ article{
 .main{
     background-color: var(--secondary-color-light);
     flex: 1 0;
-    padding: 6.5rem 6rem 7.5rem;
+    padding: 6.5rem 6rem 100vh;
 }
 
 a {
@@ -87,4 +87,8 @@ a {
 .main-nav li{
     border-bottom: 1px solid #7b7b7b;
     padding: .4rem 0;
+}
+
+.underline{
+    text-decoration: red wavy underline;
 }
