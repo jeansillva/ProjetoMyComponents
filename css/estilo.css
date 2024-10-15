@@ -131,4 +131,23 @@ a {
     gap: 3rem;
     padding: 1.5rem 0;
     padding-top: 1.5rem;
+    justify-content: space-between;
+}
+
+.row > *{ /*Todos os filhos de row vao receber esse valor*/
+    flex: 1 0 0%; 
+}
+
+.alternate{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.alternate li:not(:last-child){
+    border-bottom: 2px solid;
+    padding: 0;
+}
+
+.list-emoji{
+    list-style-type: "\1F642";
 }
